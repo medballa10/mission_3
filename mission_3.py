@@ -18,3 +18,40 @@ def rectangle(width,hight,color):
         x.left(90)
     x.penup()
     x.end_fill()
+def emptystar(size,color):
+    """ pre:fonction qui trace une étoile vide de cinq arêtes, chacune de taille "size" et de couleur "color"
+        post:l'étoile vide a été tracé sur la droite du premier côté d'un degré de 144 
+    """
+    x.pencolor(color)
+    x.pensize(6)
+    x.pendown()
+    for i in range(5):
+        x.forward(size)
+        x.right(144)
+    x.penup()   
+
+def fullstar(size,color):
+    """ pre:fonction qui trace une étoile pleine de cinq arêtes, chacune de taille "size" et de couleur "color"
+        post:l'étoile pleine a été tracé sur la droite du premier côté d'un degré de 144 
+    """
+    x.color(color)
+    x.pendown()
+    x.begin_fill()
+    for i in range(5):
+        x.forward(size)
+        x.left(144)
+    x.penup()
+    x.end_fill()
+    
+def fullstar_2(size,color):
+    """ pre:fonction qui trace une étoile pleine de cinq arêtes, chacune de taille "size" et de couleur "color"
+        post:l'étoile pleine a été tracé sur la gauche du premier côté d'un degré de 144 
+    """
+    x.color(color)
+    x.pendown()
+    x.begin_fill()
+    for i in range(5):
+        x.forward(size)
+        x.right(144)
+    x.penup()
+    x.end_fill()
