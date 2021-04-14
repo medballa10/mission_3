@@ -55,3 +55,28 @@ def fullstar_2(size,color):
         x.right(144)
     x.penup()
     x.end_fill()
+    
+def disk(radius,color):
+    """ fonction qui trace un disque de rayon 'radius' et de couleur 'color'
+       pre: `color` spécifie une couleur..
+        post: Le disque a été tracé sur la droite du premier côté.
+        La tortue est à la même position et orientation qu'au départ.
+        """ 
+    x.color(color)
+    x.pendown()
+    x.begin_fill()
+    x.circle(radius)
+    x.penup()
+    x.end_fill()
+    
+
+def croissant(radius_1,color_1,radius_2,color_2):
+    """fonction qui trace un croissant à l"aide de deux disque, par l'intermidiaire de la fonction disk
+        pre: 'color_1' spécifie la couleur de disque 1
+             'color_2' spécifie la couleur de disque 2
+             la methode goto est utulié pour décaler le deuxieme disque du premier
+        post: le croissant est tracé par la superposition de deux diques
+        """
+    disk(radius_1,color_1)
+    x.goto(150,60)
+    disk(radius_2,color_2)
