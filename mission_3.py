@@ -80,3 +80,33 @@ def croissant(radius_1,color_1,radius_2,color_2):
     disk(radius_1,color_1)
     x.goto(150,60)
     disk(radius_2,color_2)
+
+def morrocan_flag(width):
+    x.penup()
+    x.goto(-800,100)
+    x.pendown()
+    rectangle((3/2)*width,width,"red")
+    x.goto(-560,340)
+    emptystar((1/3)*width,"green")
+
+    
+def algerian_flag(width):
+    x.penup()
+    x.goto(400,100)
+    x.pendown()
+    rectangle((3/2)*width,width,"green")
+    x.penup()
+    x.goto(700,100)
+    x.pendown()
+    rectangle((3/4)*width,width,"white")
+    x.goto(700,170)
+    x.pendown()
+    disk((1/3)*width,"red")
+    x.goto(740,200)
+    x.pendown()
+    disk((1/4)*width,"white")
+    x.goto(700,280)
+    x.pendown()
+    fullstar((1/4)*width,"red")
+morrocan_flag(400)
+algerian_flag(400)
