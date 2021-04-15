@@ -149,7 +149,30 @@ def tunisian_flag(width):
     x.goto(675,-310)
     x.pendown
     fullstar((1/4)*width,"red")
+
+def muritanian_flag(width):
+    x.penup()
+    x.goto(-800,-500)
+    x.pendown()
+    rectangle((3/2)*width,width,"green")
+    x.goto(-500,-400)
+    x.pendown()
+    disk((1/3)*width,"yellow")
+    x.goto(-500,-367)
+    x.pendown()
+    disk((1/3)*width,"green")
+    x.goto(-550,-260)
+    x.pendown
+    fullstar_2((1/4)*width,"yellow")
+    x.goto(-800,-500)
+    x.pendown()
+    rectangle((3/2)*width,(1/5)*width,"red")
+    x.goto(-800,-180)
+    x.pendown()
+    rectangle((3/2)*width,(1/5)*width,"red")
 morrocan_flag(400)
 algerian_flag(400)
-libian_flag(400)
+muritanian_flag(400)
 tunisian_flag(400)
+libian_flag(400)
+
